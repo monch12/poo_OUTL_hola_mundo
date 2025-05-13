@@ -37,7 +37,36 @@ se instalan librerias que se van a ocupar en el proyecto.
 pip install wep.py 
 ´´´´
 
+## 7. Crear eel archivo **requirements.txt**
 
-__pycache__/
-.venv/
+se crea el archivo requirements  con las librerias y el numero de version utilizadas 
+´´´´shell 
+pip freeze > requirements.txt 
+´´´´
+## 8. crear el archivo **runtime.txt**
+ se crea el archivo runtime.txt para saber la version de python3 que se esta utilizando 
+ ´´´´shell
+ python3 -V runtome.txt 
+ ´´´´
+ ## 9. indexar los archivos creados con **git**
+ se bindexa los archivos y cambios realizados en el proyecto.
+ ´´´´shell
+ git add  . 
+ ´´´´
+ ## 10. generacion del comit 
+ se genera un  **commit** con un texto que describa los cambios realizados al repositorio **github**
+  ´´´´shell
+  git commit -m "CREATED configuracion basica"
+  ## 11. realizar un **push**
+  se realiza un **push** para subir los caambios realizados al repositirio **github**
+   ´´´´shell
+   git push -u origin main
+   
+ 
 
+
+  
+
+  
+
+  
