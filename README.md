@@ -2,7 +2,7 @@
 
 ## 1. Crear el archivo ** .gitignore**
 ´´´ shell 
-* .pyc
+*.pyc
 __pycache__/
 .venv/
 ´´´ 
