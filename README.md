@@ -1,66 +1,103 @@
-# Ejemplos de programacion orientada a objetos 
+# Introducción a Web.py y Python
 
-## 1. Crear el archivo ** .gitignore**
-´´´ shell 
+Este repositorio contiene ejercicios prácticos para aprender el uso de web.py y la integración de HTML en aplicaciones Python.
+
+## 1. Crear el archivo **.gitignore**
+
+Crea el archivo **.gitignore** para especificar los archivos y carpetas que no deben sincronizarse con el repositorio.
+
+````shell
 *.pyc
 __pycache__/
 .venv/
-´´´ 
+````
 
-## 2.  crear el ** virtual envionment**
-se crea el ambiente virtual del trabajo 
-´´´´ shell 
-python33 -m venv .venv
+## 2. Crear el entorno virtual (**virtual environment**)
 
-## 3. iniciar el **virtual environment**
-se activa el **virtual enviroment** para instalar las librerias necesarias para el proyecto 
-´´´´ shell 
-source .nemv/bin/aactivate 
- ## 4. actualizar pip  dentro del **virtual enviroment**
- se aactualiza la version instalada de **pip** para podr descargar las ultimas versiones de las librerias.
+Crea un entorno virtual de Python para aislar las dependencias del proyecto.
 
-´´´´shell 
-pip install --upgrade pip 
+````shell
+python3 -m venv .venv
+````
 
-## 5. verificar las librerias instaladas 
+## 3. Activar el entorno virtual
 
-se verifica las librerias que tiene instaladas 
+Activa el entorno virtual para instalar las librerías necesarias para el proyecto.
 
-´´´´shell 
+````shell
+source .venv/bin/activate
+````
+
+## 4. Actualizar **pip** dentro del entorno virtual
+
+Actualiza la versión de **pip** para poder instalar las últimas versiones de las librerías.
+
+````shell
+pip install --upgrade pip
+````
+
+## 5. Verificar las librerías instaladas
+
+Verifica qué librerías y versiones tienes instaladas en el entorno virtual.
+
+````shell
 pip freeze
-´´´´
-## 6. instalar librerias 
+````
 
-se instalan librerias que se van a ocupar en el proyecto.
+## 6. Instalar librerías necesarias
 
-´´´´shell 
-pip install wep.py 
-´´´´
+Instala las librerías requeridas para el proyecto. Por ejemplo, para este repositorio:
 
-## 7. Crear eel archivo **requirements.txt**
+````shell
+pip install web.py
+````
 
-se crea el archivo requirements  con las librerias y el numero de version utilizadas 
-´´´´shell 
-pip freeze > requirements.txt 
-´´´´
-## 8. crear el archivo **runtime.txt**
- se crea el archivo runtime.txt para saber la version de python3 que se esta utilizando 
- ´´´´shell
- python3 -V runtome.txt 
- ´´´´
- ## 9. indexar los archivos creados con **git**
- se bindexa los archivos y cambios realizados en el proyecto.
- ´´´´shell
- git add  . 
- ´´´´
- ## 10. generacion del comit 
- se genera un  **commit** con un texto que describa los cambios realizados al repositorio **github**
-  ´´´´shell
-  git commit -m "CREATED configuracion basica"
-  ## 11. realizar un **push**
-  se realiza un **push** para subir los caambios realizados al repositirio **github**
-   ´´´´shell
-   git push -u origin main
+## 7. Crear el archivo **requirements.txt**
+
+Genera el archivo **requirements.txt** con las librerías y versiones utilizadas en el proyecto.
+
+````shell
+pip freeze > requirements.txt
+````
+
+## 8. Crear el archivo **runtime.txt**
+
+Crea el archivo **runtime.txt** con la versión de Python utilizada en el proyecto.
+
+````shell
+python3 -V > runtime.txt
+````
+
+## 9. Indexar los archivos creados con **git**
+
+Agrega los archivos y cambios realizados al control de versiones con **git**.
+
+````shell
+git add .
+````
+
+## 10. Generar un **commit**
+
+Realiza un **commit** con un mensaje descriptivo sobre los cambios realizados.
+
+````shell
+git commit -m "CREATED configuracion basica"
+````
+
+## 11. Realizar un **push** 
+
+Sube los cambios realizados al repositorio de **GitHub**.
+
+````shell
+git push -u origin main
+````
+
+---
+
+**Notas y recomendaciones:**
+- Asegúrate de activar el entorno virtual cada vez que trabajes en el proyecto.
+- El archivo **.gitignore** es fundamental para evitar subir archivos innecesarios o sensibles.
+- Utiliza mensajes de commit claros y descriptivos para facilitar el seguimiento de los cambios.
    
  
 
